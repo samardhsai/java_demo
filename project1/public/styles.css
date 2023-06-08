@@ -1,0 +1,42 @@
+.textarea {
+    width: 100px;
+    height: 100px;
+    background-color: grey;
+  }
+
+.iframe {
+    height: 300px;
+    width: 100%;
+    border: 5px solid red;
+}
+
+#element {
+    color: blue;
+    text-align: center;
+}
+
+.heading {
+    text-align: right;
+    color: red;
+    height: 5px;
+}
+
+h3 {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+h4 {
+    background-color: orange;
+    border: 5px dotted green;
+    font-size: 30px;
+    color: aqua;
+}
+
+tr:nth-child(even) {
+    background-color: azure;
+}
+
+tr:nth-child(odd) {
+    background-color: rgb(36, 133, 133);
+}
