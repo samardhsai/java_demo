@@ -40,3 +40,118 @@ tr:nth-child(even) {
 tr:nth-child(odd) {
     background-color: rgb(36, 133, 133);
 }
+
+h1 {
+    color: bisque;
+}
+
+h1.highlight {
+    color: blue;
+}
+
+ul li:nth-child(even) {
+    color:rgb(36, 133, 133);
+}
+
+a:hover {
+    color: antiquewhite;
+}
+
+a:visited {
+    color: brown;
+}
+
+.element {
+  padding: 10px;
+  margin: 20px;
+}
+
+p::first-letter {
+    color: slategray;
+    font-weight: bold;
+}
+
+header {
+    display: flex;
+    background-color: aqua;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2px;
+    height: 50px;
+}
+
+.element img {
+    width: auto;
+    height: 40px;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 10px;
+}
+
+.container {
+    display: flex;
+    background-color: darkgreen;
+}
+
+.column1 {
+    width: 150px;
+    background-color: bisque;
+}
+
+.column2 {
+    background-color: coral;
+    flex: 1;
+}
+
+.column3 {
+    background-color: blueviolet;
+    width: 300px;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.column {
+    flex: 1 0 50px;
+    padding: 10px;
+    border: 5px solid #c91818;
+  }
+
+  .cardgrid {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .card {
+    flex: 0 0 300px;
+    margin: 10px;
+    background-color: #f1f1f1;
+  }
+
+  .footer {
+    display: flex;
+    position: sticky;
+    flex-direction: column;
+  }
+
+  .pricingcard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .pricing {
+    border: 5px solid aquamarine;
+    text-align: center;
+    flex: 0 0 200px;
+    padding: 10px;
+  }
