@@ -242,7 +242,13 @@ ul.navbar li {
 .gallery {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
+
+.galleryitem {
+    flex: 0 0 300px;
+    margin: 10px;
+  }
 
 .sample {
     position: sticky;
@@ -269,6 +275,13 @@ ul.navbar li {
     .gridiitem {
       flex: 0 0 calc(100% - 20px);
     }
+  }
+
+  .timeline-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
   }
 
 
