@@ -68,12 +68,22 @@ if(grade>=60) {
 else
     console.log("Fail");
 
+// Question 6
+
+function isPalindrome(word) {
+    var reverseWord = word.split('').reverse().join('');
+    return word === reverseWord
+}
+
+var result = isPalindrome("racecar");
+console.log(result);
+
 // Question 7
 
 const arr = [1,2,3,4,5];
+var sum = 0;
 for(let i=0;i<arr.length;i++) {
-    var sum = 0;
-    sum = sum + arr[i];
+     sum = sum + arr[i];
 }
 
 console.log(sum)
