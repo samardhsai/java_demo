@@ -71,12 +71,16 @@ else
 // Question 6
 
 function isPalindrome(word) {
-    var reverseWord = word.split('').reverse().join('');
-    return word === reverseWord
+    const len = word.length;
+    for(var i=0; i<len/2; i++) {
+        if(word[i] != word[len-1-i]) {
+            return false;
+        }
+    }
+    return true;
 }
 
-var result = isPalindrome("racecar");
-console.log(result);
+console.log(isPalindrome("racecar"));
 
 // Question 7
 
@@ -155,3 +159,137 @@ function isPrime(num) {
 }
 
 primeNum(20);
+
+// JS Assignment 2
+// Question 1
+
+const arr1 = ["afgthge", "dirogdo", "vnidjkdos", "jdidjjvo"];
+arr1.push("asfffkg");
+console.log(arr1);
+
+// Question 2
+
+arr1.pop();
+console.log(arr1);
+
+// Question 3
+const arr2 = ["afgthge", "dirogdo", "vnidjkdos", "jdidjjvo"];
+const arr3 = ["djfijf", "qwoejfjo"];
+const result = arr2.concat(arr3);
+console.log(result);
+
+// Question 4
+
+const result1 = arr1.indexOf("vnidjkdos");
+console.log(result1);
+
+// Question 5
+const result2 = arr1.slice(1, 3);
+console.log(result2);
+
+// Question 6
+
+let text = "Dkijivgo Aokoskgo";
+let text1 = text.toUpperCase();
+console.log(text1);
+let text2 = text.toLowerCase();
+console.log(text2);
+let text3 = text.split(" ");
+console.log(text3);
+let text4 = text.charAt(5);
+console.log(text4);
+let text5 = text.substring(4, 8);
+console.log(text5);
+
+function doubleArray(arr) {
+    const double = arr.map((element) => element *2);
+    return double;
+}
+
+const arr4 = [2, 4, 10, 18];
+const double = doubleArray(arr4);
+console.log(double);
+
+function removeEvenNumbers(arr) {
+    const oddNumbers = arr.filter((element) => element % 2 != 0);
+    return oddNumbers;
+  }
+
+  const arr5 = [1, 2, 3, 4, 5];
+  const odd = removeEvenNumbers(arr5);
+  console.log(odd);
+
+  function logArray(arr) {
+    arr.forEach((element) => console.log(element));
+  }
+
+  const arr6 = [1,2,3,9,8,7];
+  console.log(logArray(arr6));
+
+// Algorithms
+
+function reverse(str) {
+    let reversed = '';
+    for (let i = str.length - 1; i >= 0; i--) {
+      reversed += str.charAt(i);
+    }
+    return reversed;
+  }
+
+  const input = "digjdihfijijif";
+const reversed = reverse(input);
+console.log(reversed);
+
+function reverseBuildIn(str) {
+    return str.split('').reverse().join('');
+  }
+
+  const input1 = "digjdihfijijif";
+const reversed1 = reverse(input1);
+console.log(reversed1);
+
+function findMaxNumber(arr) {
+    let maxNumber = arr[0];
+    for (let i = 1; i < arr.length; i++) {
+      if (arr[i] > maxNumber) {
+        maxNumber = arr[i];
+      }
+    }
+    return maxNumber;
+  }
+
+  const numbers = [4, 14, 18, 9, 11, 1];
+const maxNumber = findMaxNumber(numbers);
+console.log(maxNumber);
+
+function removeDuplicates(arr) {
+    const uniqueArray = [];
+    for (let i = 0; i < arr.length; i++) {
+      if (!uniqueArray.includes(arr[i])) {
+        uniqueArray.push(arr[i]);
+      }
+    }
+    return uniqueArray;
+  }
+
+  const numbers1 = [1, 2, 3, 4, 2, 1, 3, 5];
+const uniqueNumbers = removeDuplicates(numbers1);
+console.log(uniqueNumbers);
+
+function sortedArray(arr) {
+    for(i=0;i<arr.length-1;i++) {
+        for(j=0;j<arr.length-1-i;i++) {
+            if(arr[j]>arr[j+1])
+                var temp = arr[j];
+                arr[j] = arr[j+1];
+                arr[j+1] = temp;
+        }
+    }
+    return arr;
+}
+
+
+const number2 = [3,5,4,1,2];
+const sorted = sortedArray(number2);
+console.log(sorted);
+
