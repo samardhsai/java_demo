@@ -277,12 +277,12 @@ const uniqueNumbers = removeDuplicates(numbers1);
 console.log(uniqueNumbers);
 
 function sortedArray(arr) {
-    for(i=0;i<arr.length-1;i++) {
-        for(j=0;j<arr.length-1-i;i++) {
-            if(arr[j]>arr[j+1])
-                var temp = arr[j];
-                arr[j] = arr[j+1];
-                arr[j+1] = temp;
+    for(i=0;i<arr.length;i++) {
+        for(j=i+1;j<arr.length;i++) {
+            if(arr[i]>arr[j])
+                var temp = arr[i];
+                arr[i] = arr[j];
+                arr[j] = temp;
         }
     }
     return arr;
